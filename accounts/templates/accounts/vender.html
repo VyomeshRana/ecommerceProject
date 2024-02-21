@@ -1,0 +1,18 @@
+{% extends "nav.html" %}
+
+{% block content %}
+<div class="container p-4 ">
+    <div class="jumbotrone d-flex justify-content-center ">
+        <div class="card border-primary w-75">
+            <div class="card-header border-primary"><h4>Vender Registration Form</h4></div>
+            <div class="card-body">
+                <form action="" method="POST">
+                    {% csrf_token %}
+                    {{ form.as_p }}
+                    <input class="btn btn-dark" type="submit" value="SUBMIT"></input>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>  
+{% endblock content %}  
